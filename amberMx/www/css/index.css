@@ -122,3 +122,14 @@ h1 {
     width: 200px;
     height: 200px;
 }
+#pic_desaparecidofull{
+    width:100%;
+    height:auto;
+}
+.texleft{
+text-align:justify;
+}
+#map{
+    width:auto !important;
+    height:300px !important;
+}

@@ -1,5 +1,9 @@
 #Last build type
+<<<<<<< HEAD
 #Sat, 22 Feb 2014 21:28:13 -0600
+=======
+#Sun, 23 Feb 2014 09:13:20 -0600
+>>>>>>> jose
 
 build.last.target=debug
 
