@@ -37,31 +37,60 @@
 		<div data-role="page" id="configuracion">
 
 			<div data-role="header">
-				<a class="ui-btn-left" data-icon="arrow-l" href="javascript:history.back(1) " data-theme="a">Back</a>
+				<a class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-home ui-btn-icon-notext ui-shadow" title=" Home " data-form="ui-icon" data-role="button" role="button" href="javascript:history.back(1)"> Regresar </a>	
 				<h1>Configuración</h1>
 			</div><!-- /header -->
 
 			<div role="main" class="ui-content">
-				<label for="estado" class="select">Estado:</label>
+
+				<label for="estado" class="select bold-font"><h2>Estado</h2></label>
 				<select name="estado" id="estado">
-				  <option value="1">Nuevo León</option>
-				  <option value="2">Oaxaca</option>
-				  <option value="3">Veracruz</option>
-				  <option value="4">Tamaulipas</option>
+					<option value="1">Aguascalientes</option>
+					<option value="2">Baja California</option>
+					<option value="3">Baja California Sur</option>
+					<option value="4">Campeche</option>
+					<option value="5">Chiapas</option>
+					<option value="6">Chihuahua</option>
+					<option value="7">Coahuila</option>
+					<option value="8">Colima</option>
+					<option value="9">Distrito Federal</option>
+					<option value="10">Durango</option>
+					<option value="11">Estado de México</option>
+					<option value="12">Guanajuato</option>
+					<option value="13">Guerrero</option>
+					<option value="14">Hidalgo</option>
+					<option value="15">Jalisco</option>
+					<option value="16">Michoacán</option>
+					<option value="17">Morelos</option>
+					<option value="18">Nayarit</option>
+					<option value="19">Nuevo León</option>
+					<option value="20">Oaxaca</option>
+					<option value="21">Puebla</option>
+					<option value="22">Querétaro</option>
+					<option value="23">Quintana Roo</option>
+					<option value="24">San Luis Potosí</option>
+					<option value="25">Sinaloa</option>
+					<option value="26">Sonora</option>
+					<option value="27">Tabasco</option>
+					<option value="28">Tamaulipas</option>
+					<option value="29">Tlaxcala</option>
+					<option value="30">Veracruz</option>
+					<option value="31">Yucatán</option>
+					<option value="32">Zacatecas</option>
 				</select>
-				<label for="notificaciones" class="ui-flipswitch-input">Notificaciones:</label>
-				<div class="ui-flipswitch ui-shadow-inset ui-bar-inherit">
-				  <span tabindex="1" class="ui-flipswitch-on ui-btn ui-shadow ui-btn-inherit">SI</span>
-				  <span class="ui-flipswitch-off">NO</span>
-				  <input type="checkbox" data-role="flipswitch" data-enhanced="true" data-corners="false" name="notificaciones" class="ui-flipswitch-input">
-				</div>
 
-				<p><a href="#foo">Back to foo</a></p>
+				<label for="notificaciones" class="select bold-font"><h2>Notificaciones</h2></label>
+
+    			<input type="checkbox" data-role="flipswitch" name="notificaciones" id="notificaciones" data-on-text="SÍ" data-off-text="NO" data-wrapper-class="custom-size-flipswitch">
+
+				<label class="bold-font"><input type="checkbox" name="nacionales"> Alertas Nacionales</label>
+				
+
+				<a href="#foo" id="event-example" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+					<span class="ui-btn-inner"><span class="ui-btn-text">Guardar</span></span>
+				</a>
+				
 			</div><!-- /content -->
-
-			<div data-role="footer">
-				<h4>Page Footer</h4>
-			</div><!-- /footer -->
 		</div><!-- /page -->
 		<!-- Start of alertas page -->
 		<div data-role="page" id="alertas">
