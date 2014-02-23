@@ -34,6 +34,10 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        /*$(window).unbind();
+        $(window).bind('pageshow resize orientationchange', 
+                        function(e){ max_height(); });
+        max_height();*/
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
