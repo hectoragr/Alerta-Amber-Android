@@ -42,7 +42,8 @@
 			</div><!-- /header -->
 
 			<div role="main" class="ui-content">
-				<label for="estado" class="select">Estado:</label>
+
+				<label for="estado" class="select bold-font"><h2>Estado</h2></label>
 				<select name="estado" id="estado">
 				  <option value="1">Nuevo León</option>
 				  <option value="2">Oaxaca</option>
@@ -50,19 +51,34 @@
 				  <option value="4">Tamaulipas</option>
 				  <option value="5">Coahuila</option>
 				</select>
-				<label for="notificaciones" class="ui-flipswitch-input">Notificaciones:</label>
+
+				<label for="notificaciones" class="select bold-font"><h2>Notificaciones</h2></label>
 				<div class="ui-flipswitch ui-shadow-inset ui-bar-inherit">
 				  <span tabindex="1" class="ui-flipswitch-on ui-btn ui-shadow ui-btn-inherit">SI</span>
 				  <span class="ui-flipswitch-off">NO</span>
 				  <input type="checkbox" data-role="flipswitch" data-enhanced="true" data-corners="false" name="notificaciones" class="ui-flipswitch-input">
 				</div>
+				<div class="ui-controlgroup-controls ">
+					<legend><h2>Notificaciones</h2></legend>
+					<div class="ui-radio">
+						<label for="radio-view-a-a" data-form="ui-btn-up-a" class="ui-btn ui-corner-all ui-btn-a ui-first-child ui-btn-active ui-radio-on">SI</label>
+						<input data-theme="a" type="radio" name="radio-view-a" id="radio-view-a-a" value="list" checked="checked" data-cacheval="false">
+					</div> 
+					<div class="ui-radio">
+						<label for="radio-view-b-a" data-form="ui-btn-up-a" class="ui-btn ui-corner-all ui-btn-a ui-last-child ui-radio-off">NO</label>
+						<input data-theme="a" type="radio" name="radio-view-a" id="radio-view-b-a" value="grid" data-cacheval="true">
+					</div> 
+					 
+				</div>
+				<label for="flip-checkbox-3">Notificaciones</label>
+    			<input type="checkbox" data-role="flipswitch" name="flip-checkbox-3" id="flip-checkbox-3" data-on-text="SI" data-off-text="NO" data-wrapper-class="custom-size-flipswitch">
 
-				<p><a href="#foo">Back to foo</a></p>
+				<label class="bold-font"><input type="checkbox" name="nacionales"> Alertas Nacionales</label>
+				<a href="#foo" id="event-example" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+					<span class="ui-btn-inner"><span class="ui-btn-text">Guardar</span></span>
+				</a>
+				
 			</div><!-- /content -->
-
-			<div data-role="footer">
-				<h4>Page Footer</h4>
-			</div><!-- /footer -->
 		</div><!-- /page -->
 		<!-- Start of alertas page -->
 		<div data-role="page" id="alertas">
