@@ -13,7 +13,7 @@
 .texleft{
 text-align:justify;
 }
-/*#map{
-    max-width: 100%;
+#map{
+    width: 800px !important;
     height:300px !important;
-}*/
+}
