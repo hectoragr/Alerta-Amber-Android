@@ -22,6 +22,4 @@ var l, ln;
       });
         }
       });
-       $("#map").css("height","400px");
-    $("#map").css("width","100%");
     });
