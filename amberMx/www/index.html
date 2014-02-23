@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="css/index.css" />
 		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+		<script src="js/alerta.js"></script>
 	</head>
 	<body>
 
@@ -121,7 +122,7 @@
 
 			<div role="main" class="ui-content">
 				<div class="contcenter">
-					<img id="pic_desaparecido" src="img/Rafael-Eduardo-Jourdain.jpg" />
+					<a href="#alertafull" data-transition="pop"><img id="pic_desaparecido" src="img/Rafael-Eduardo-Jourdain.jpg" /></a>
 				</div>
 				<div class="contcenter">
 					<p>Homoclave:</p>
@@ -167,5 +168,19 @@
 				<h4>Page Footer</h4>
 			</div><!-- /footer -->
 		</div><!-- /page -->
+		<!-- Start of alertas page -->
+		<div data-role="page" id="alertafull">
+
+			<div data-role="header">
+				<a class="ui-btn-left" data-icon="arrow-l" href="javascript:history.back(1) " data-theme="a">Back</a>
+				<h1>Alerta</h1>
+			</div><!-- /header -->
+
+			<div role="main" class="ui-content">
+				<div class="contcenter">
+					<a href="#alerta" data-transition="pop"><img id="pic_desaparecidofull" src="img/Rafael-Eduardo-Jourdain.jpg" /></a>
+				</div>
+				<p><a href="#foo">Back to foo</a></p>
+			</div><!-- /content -->
 	</body>
 </html>
