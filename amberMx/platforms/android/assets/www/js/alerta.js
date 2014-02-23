@@ -2,8 +2,6 @@ var map;
 var marker;
 var l, ln;
     $(document).ready(function(){
-
-     // prettyPrint();
       map = new GMaps({
         div: '#map',
         lat: -12.043333,
@@ -13,13 +11,13 @@ var l, ln;
            l = e.latLng.lat();
            ln = e.latLng.lng();
            map.addMarker({
-        lat: l,
-        lng: ln,
-        title: 'Marker with InfoWindow',
-        infoWindow: {
-          content: '<p>HTML Content</p>'
-        }
-      });
+	           lat: l,
+	           lng: ln,
+	           title: 'Marker with InfoWindow',
+	           infoWindow: {
+	           content: '<p>HTML Content</p>'
+           }
+			});
         }
       });
     });
