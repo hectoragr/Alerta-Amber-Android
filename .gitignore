@@ -42,3 +42,9 @@ amberMx/platforms/android/bin/resources.ap_
 amberMx/platforms/android/bin/resources.ap_
 
 amberMx/platforms/android/ant-build/amberMx-debug-unaligned.apk
+
+*.apk
+
+*.prop
+
+amberMx/platforms/android/CordovaLib/ant-build/build.prop

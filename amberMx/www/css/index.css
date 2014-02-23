@@ -130,6 +130,6 @@ h1 {
 text-align:justify;
 }
 #map{
-    width:auto !important;
+    width:100% !important;
     height:300px !important;
 }
