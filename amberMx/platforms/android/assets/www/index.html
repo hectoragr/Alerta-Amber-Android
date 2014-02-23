@@ -12,29 +12,93 @@
 		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
 	</head>
 	<body>
-		<div data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<h1>It Worked!</h1>
-			</div>
-			<div data-role="content" data-theme="a">
-				<p>Your theme was successfully downloaded. You can use this page as a reference for how to link it up!</p>
-				<pre>
-<strong>&lt;link rel=&quot;stylesheet&quot; href=&quot;themes/amberish.min.css&quot; /&gt;</strong>
-&lt;link rel=&quot;stylesheet&quot; href=&quot;http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css&quot; /&gt;
-&lt;script src=&quot;http://code.jquery.com/jquery-1.10.2.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js&quot;&gt;&lt;/script&gt;
-				</pre>
-				<p>This is content color swatch "A" and a preview of a <a href="#" class="ui-link">link</a>.</p>
-				<label for="slider1">Input slider:</label>
-				<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-theme="a" />
-				<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
-				<legend>Cache settings:</legend>
-				<input type="radio" name="radio-choice-a1" id="radio-choice-a1" value="on" checked="checked" />
-				<label for="radio-choice-a1">On</label>
-				<input type="radio" name="radio-choice-a1" id="radio-choice-b1" value="off"  />
-				<label for="radio-choice-b1">Off</label>
-				</fieldset>
-			</div>
-		</div>
+
+		<!-- Start of first page -->
+		<div data-role="page" id="foo">
+
+			<div data-role="header">
+				<h1>amberMx</h1>
+			</div><!-- /header -->
+
+			<div role="main" class="ui-content">
+				<p>I'm first in the source order so I'm shown as the page.</p>
+				<p>View internal page called <a href="#configuracion">configuración</a></p>
+				<p>View internal page called <a href="#alerta">alerta</a></p>
+				<p>View internal page called <a href="#alertas">alertas</a></p>
+				<p>View internal page called <a href="#reportar">reportar</a></p>
+			</div><!-- /content -->
+
+			<div data-role="footer">
+				<h4>Page Footer</h4>
+			</div><!-- /footer -->
+		</div><!-- /page -->
+
+		<!-- Start of second page -->
+		<div data-role="page" id="configuracion">
+
+			<div data-role="header">
+				<a class="ui-btn-left" data-icon="arrow-l" href="javascript:history.back(1) " data-theme="a">Back</a>
+				<h1>Configuración</h1>
+			</div><!-- /header -->
+
+			<div role="main" class="ui-content">
+				<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+				<p><a href="#foo">Back to foo</a></p>
+			</div><!-- /content -->
+
+			<div data-role="footer">
+				<h4>Page Footer</h4>
+			</div><!-- /footer -->
+		</div><!-- /page -->
+		<!-- Start of alertas page -->
+		<div data-role="page" id="alertas">
+
+			<div data-role="header">
+				<a class="ui-btn-left" data-icon="arrow-l" href="javascript:history.back(1) " data-theme="a">Back</a>
+				<h1>Alertas</h1>
+			</div><!-- /header -->
+
+			<div role="main" class="ui-content">
+				<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+				<p><a href="#foo">Back to foo</a></p>
+			</div><!-- /content -->
+
+			<div data-role="footer">
+				<h4>Page Footer</h4>
+			</div><!-- /footer -->
+		</div><!-- /page -->
+		<!-- Start of alertas page -->
+		<div data-role="page" id="alerta">
+
+			<div data-role="header">
+				<a class="ui-btn-left" data-icon="arrow-l" href="javascript:history.back(1) " data-theme="a">Back</a>
+				<h1>Alerta</h1>
+			</div><!-- /header -->
+
+			<div role="main" class="ui-content">
+				<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+				<p><a href="#foo">Back to foo</a></p>
+			</div><!-- /content -->
+
+			<div data-role="footer">
+				<h4>Page Footer</h4>
+			</div><!-- /footer -->
+		</div><!-- /page -->
+		<!-- Start of alertas page -->
+		<div data-role="page" id="reportar">
+
+			<div data-role="header">
+				<h1>Reportar</h1>
+			</div><!-- /header -->
+
+			<div role="main" class="ui-content">
+				<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+				<p><a href="#foo">Back to foo</a></p>
+			</div><!-- /content -->
+
+			<div data-role="footer">
+				<h4>Page Footer</h4>
+			</div><!-- /footer -->
+		</div><!-- /page -->
 	</body>
 </html>
