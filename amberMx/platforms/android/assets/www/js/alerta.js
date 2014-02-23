@@ -2,6 +2,7 @@ var map;
 var marker;
 var l, ln;
     $(document).ready(function(){
+
      // prettyPrint();
       map = new GMaps({
         div: '#map',
@@ -19,9 +20,6 @@ var l, ln;
           content: '<p>HTML Content</p>'
         }
       });
-        },
-        dragend: function(e){
-          alert('dragend');
         }
       });
     });
