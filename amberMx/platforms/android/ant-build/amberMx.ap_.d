@@ -39,8 +39,12 @@
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/img/album-ws.jpg \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/img/album-xx.jpg \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/img/logo.png \
-/Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/img/Rafael-Eduardo-Jourdain.jpg \
+/Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/js/alerta.js \
+/Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/js/alertas.js \
+/Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/js/config.js \
+/Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/js/gmaps.js \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/js/index.js \
+/Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/js/prettify.js \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/themes/amberish.css \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/themes/amberish.min.css \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/themes/images \
