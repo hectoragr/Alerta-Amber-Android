@@ -42,7 +42,20 @@
 			</div><!-- /header -->
 
 			<div role="main" class="ui-content">
-				<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+				<label for="estado" class="select">Estado:</label>
+				<select name="estado" id="estado">
+				  <option value="1">Nuevo León</option>
+				  <option value="2">Oaxaca</option>
+				  <option value="3">Veracruz</option>
+				  <option value="4">Tamaulipas</option>
+				</select>
+				<label for="notificaciones" class="ui-flipswitch-input">Notificaciones:</label>
+				<div class="ui-flipswitch ui-shadow-inset ui-bar-inherit">
+				  <span tabindex="1" class="ui-flipswitch-on ui-btn ui-shadow ui-btn-inherit">SI</span>
+				  <span class="ui-flipswitch-off">NO</span>
+				  <input type="checkbox" data-role="flipswitch" data-enhanced="true" data-corners="false" name="notificaciones" class="ui-flipswitch-input">
+				</div>
+
 				<p><a href="#foo">Back to foo</a></p>
 			</div><!-- /content -->
 
