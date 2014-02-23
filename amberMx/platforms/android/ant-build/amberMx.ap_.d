@@ -24,6 +24,7 @@
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/css/Roboto-Bold.ttf \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/css/Roboto-Light.ttf \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/img/logo.png \
+/Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/img/Rafael-Eduardo-Jourdain.jpg \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/js/index.js \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/themes/amberish.css \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/themes/amberish.min.css \
