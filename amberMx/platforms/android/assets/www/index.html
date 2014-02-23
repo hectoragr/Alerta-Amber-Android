@@ -5,11 +5,14 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>jQuery Mobile: Theme Download</title>
+
 		<link rel="stylesheet" href="themes/amberish.min.css" />
 		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
 		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+		<script src="js/alerta.js"></script>
 	</head>
 	<body>
 
@@ -118,7 +121,30 @@
 			</div><!-- /header -->
 
 			<div role="main" class="ui-content">
-				<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+				<div class="contcenter">
+					<a href="#alertafull" data-transition="pop"><img id="pic_desaparecido" src="img/Rafael-Eduardo-Jourdain.jpg" /></a>
+				</div>
+				<div class="contcenter">
+					<p>Homoclave:</p>
+					<p id="Homoclave"></p>
+					<p>Nombre</p>
+					<p>Apellidos</p>
+					<p>Genero</p>
+					<p>Peso</p>
+					<p>Fecha de Nacimiento</p>
+					<p>Ropa</p>
+					<p>Complexion</p>
+					<p>Ojos</p>
+					<p>Cabello</p>
+					<p>Piel</p>
+					<p>Cicatrices</p>
+					<p>Marcas</p>
+					<p>Fecha que desaparicio</p>
+					<p>Lugar</p>
+					<p>Involucrudos</p>
+					<p>Vehiculo</p>
+					<p>Encontrado</p>
+				</div>
 				<p><a href="#foo">Back to foo</a></p>
 			</div><!-- /content -->
 
@@ -142,5 +168,19 @@
 				<h4>Page Footer</h4>
 			</div><!-- /footer -->
 		</div><!-- /page -->
+		<!-- Start of alertas page -->
+		<div data-role="page" id="alertafull">
+
+			<div data-role="header">
+				<a class="ui-btn-left" data-icon="arrow-l" href="javascript:history.back(1) " data-theme="a">Back</a>
+				<h1>Alerta</h1>
+			</div><!-- /header -->
+
+			<div role="main" class="ui-content">
+				<div class="contcenter">
+					<a href="#alerta" data-transition="pop"><img id="pic_desaparecidofull" src="img/Rafael-Eduardo-Jourdain.jpg" /></a>
+				</div>
+				<p><a href="#foo">Back to foo</a></p>
+			</div><!-- /content -->
 	</body>
 </html>
