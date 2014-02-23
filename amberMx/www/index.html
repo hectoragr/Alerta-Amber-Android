@@ -14,6 +14,9 @@
 		<link rel="stylesheet" href="css/alertas.css" />
 		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+		<script src="js/alertas.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/index.js"></script>
 	</head>
 	<body>
 
@@ -46,54 +49,54 @@
 			</div><!-- /header -->
 
 			<div role="main" class="ui-content">
+				<form id="form-configuracion">
+					<label for="estado" class="select bold-font"><h2>Estado</h2></label>
+					<select name="estado" id="estado">
+						<option value="1">Aguascalientes</option>
+						<option value="2">Baja California</option>
+						<option value="3">Baja California Sur</option>
+						<option value="4">Campeche</option>
+						<option value="5">Chiapas</option>
+						<option value="6">Chihuahua</option>
+						<option value="7">Coahuila</option>
+						<option value="8">Colima</option>
+						<option value="9">Distrito Federal</option>
+						<option value="10">Durango</option>
+						<option value="11">Estado de México</option>
+						<option value="12">Guanajuato</option>
+						<option value="13">Guerrero</option>
+						<option value="14">Hidalgo</option>
+						<option value="15">Jalisco</option>
+						<option value="16">Michoacán</option>
+						<option value="17">Morelos</option>
+						<option value="18">Nayarit</option>
+						<option value="19">Nuevo León</option>
+						<option value="20">Oaxaca</option>
+						<option value="21">Puebla</option>
+						<option value="22">Querétaro</option>
+						<option value="23">Quintana Roo</option>
+						<option value="24">San Luis Potosí</option>
+						<option value="25">Sinaloa</option>
+						<option value="26">Sonora</option>
+						<option value="27">Tabasco</option>
+						<option value="28">Tamaulipas</option>
+						<option value="29">Tlaxcala</option>
+						<option value="30">Veracruz</option>
+						<option value="31">Yucatán</option>
+						<option value="32">Zacatecas</option>
+					</select>
 
-				<label for="estado" class="select bold-font"><h2>Estado</h2></label>
-				<select name="estado" id="estado">
-					<option value="1">Aguascalientes</option>
-					<option value="2">Baja California</option>
-					<option value="3">Baja California Sur</option>
-					<option value="4">Campeche</option>
-					<option value="5">Chiapas</option>
-					<option value="6">Chihuahua</option>
-					<option value="7">Coahuila</option>
-					<option value="8">Colima</option>
-					<option value="9">Distrito Federal</option>
-					<option value="10">Durango</option>
-					<option value="11">Estado de México</option>
-					<option value="12">Guanajuato</option>
-					<option value="13">Guerrero</option>
-					<option value="14">Hidalgo</option>
-					<option value="15">Jalisco</option>
-					<option value="16">Michoacán</option>
-					<option value="17">Morelos</option>
-					<option value="18">Nayarit</option>
-					<option value="19">Nuevo León</option>
-					<option value="20">Oaxaca</option>
-					<option value="21">Puebla</option>
-					<option value="22">Querétaro</option>
-					<option value="23">Quintana Roo</option>
-					<option value="24">San Luis Potosí</option>
-					<option value="25">Sinaloa</option>
-					<option value="26">Sonora</option>
-					<option value="27">Tabasco</option>
-					<option value="28">Tamaulipas</option>
-					<option value="29">Tlaxcala</option>
-					<option value="30">Veracruz</option>
-					<option value="31">Yucatán</option>
-					<option value="32">Zacatecas</option>
-				</select>
+					<label for="notificaciones" class="select bold-font"><h2>Notificaciones</h2></label>
 
-				<label for="notificaciones" class="select bold-font"><h2>Notificaciones</h2></label>
+	    			<input type="checkbox" data-role="flipswitch" name="notificaciones" id="notificaciones" data-on-text="SÍ" data-off-text="NO" data-wrapper-class="custom-size-flipswitch">
 
-    			<input type="checkbox" data-role="flipswitch" name="notificaciones" id="notificaciones" data-on-text="SÍ" data-off-text="NO" data-wrapper-class="custom-size-flipswitch">
+					<label class="bold-font"><input type="checkbox" name="nacionales"> Alertas Nacionales</label>
+					
 
-				<label class="bold-font"><input type="checkbox" name="nacionales"> Alertas Nacionales</label>
-				
-
-				<a href="#foo" id="event-example" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
-					<span class="ui-btn-inner"><span class="ui-btn-text">Guardar</span></span>
-				</a>
-				
+					<a href="#foo" id="btn-save-config" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+						<span class="ui-btn-inner"><span class="ui-btn-text">Guardar</span></span>
+					</a>
+				</form>
 			</div><!-- /content -->
 		</div><!-- /page -->
 		<!-- Start of alertas page -->
@@ -195,24 +198,67 @@
 							<img src="img/album-p.jpg">
 							<h3>Wolfgang Amadeus Phoenix</h3>
 							<p>Phoenix</p>
-							</a><a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-star ui-btn-a" title="Purchase album"></a>
+							</a><a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-star ui-btn-a ui-btn-active" title="Purchase album"></a>
 						</li>
 						<li class="ui-li-has-alt ui-li-has-thumb"><a href="index.html" class="ui-btn">
 							<img src="img/album-rh.jpg">
 							<h3>Kid A</h3>
 							<p>Radiohead</p>
-							</a><a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-star ui-btn-a" title="Purchase album"></a>
+							</a><a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-star ui-btn-a ui-btn-active" title="Purchase album"></a>
 						</li>
 						<li class="ui-li-has-alt ui-li-has-thumb"><a href="index.html" class="ui-btn">
 							<img src="img/album-k.jpg">
 							<h3>Hot Fuss</h3>
 							<p>Killers</p>
-							</a><a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-star ui-btn-a" title="Purchase album"></a>
+							</a><a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-star ui-btn-a ui-btn-active" title="Purchase album"></a>
 						</li>
 					</ul>
 			      </div>
 			      <div id="buscar">
-			        <p>This is the content of the tab 'Three', with the id fragment-3.</p>
+			        <form id="form-buscar">
+			        	<label for="id"><h2>ID alerta</h2></label>
+						<input type="text" name="id" id="id" value="" data-clear-btn="true" />
+						<label for="id"><h2>Nombre persona</h2></label>
+						<input type="text" name="nombre" id="nombre" value="" data-clear-btn="true" />
+						<label for="estado" class="select bold-font"><h2>Estado</h2></label>
+						<select name="estado" id="estado">
+							<option value="1">Aguascalientes</option>
+							<option value="2">Baja California</option>
+							<option value="3">Baja California Sur</option>
+							<option value="4">Campeche</option>
+							<option value="5">Chiapas</option>
+							<option value="6">Chihuahua</option>
+							<option value="7">Coahuila</option>
+							<option value="8">Colima</option>
+							<option value="9">Distrito Federal</option>
+							<option value="10">Durango</option>
+							<option value="11">Estado de México</option>
+							<option value="12">Guanajuato</option>
+							<option value="13">Guerrero</option>
+							<option value="14">Hidalgo</option>
+							<option value="15">Jalisco</option>
+							<option value="16">Michoacán</option>
+							<option value="17">Morelos</option>
+							<option value="18">Nayarit</option>
+							<option value="19">Nuevo León</option>
+							<option value="20">Oaxaca</option>
+							<option value="21">Puebla</option>
+							<option value="22">Querétaro</option>
+							<option value="23">Quintana Roo</option>
+							<option value="24">San Luis Potosí</option>
+							<option value="25">Sinaloa</option>
+							<option value="26">Sonora</option>
+							<option value="27">Tabasco</option>
+							<option value="28">Tamaulipas</option>
+							<option value="29">Tlaxcala</option>
+							<option value="30">Veracruz</option>
+							<option value="31">Yucatán</option>
+							<option value="32">Zacatecas</option>
+						</select>
+						<a href="#foo" id="btn-buscar-alerta" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c" style="font-size:24px; margin-top:30px;">
+							<span class="ui-btn-inner"><span class="ui-btn-text">Buscar</span></span>
+						</a>
+			        </form>
 			      </div>
 			    </div>
 			</div><!-- /content -->
