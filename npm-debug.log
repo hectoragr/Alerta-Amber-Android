@@ -1,0 +1,62 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'macvim' ]
+2 info using npm@1.3.14
+3 info using node@v0.10.22
+4 verbose cache add [ 'macvim', null ]
+5 verbose cache add name=undefined spec="macvim" args=["macvim",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'macvim',
+6 verbose parsed url   path: 'macvim',
+6 verbose parsed url   href: 'macvim' }
+7 silly lockFile e25edac7-macvim macvim
+8 verbose lock macvim /Users/hectorgomez/.npm/e25edac7-macvim.lock
+9 silly lockFile e25edac7-macvim macvim
+10 silly lockFile e25edac7-macvim macvim
+11 verbose addNamed [ 'macvim', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile ce82e610-macvim macvim@
+14 verbose lock macvim@ /Users/hectorgomez/.npm/ce82e610-macvim.lock
+15 silly addNameRange { name: 'macvim', range: '*', hasData: false }
+16 verbose url raw macvim
+17 verbose url resolving [ 'https://registry.npmjs.org/', './macvim' ]
+18 verbose url resolved https://registry.npmjs.org/macvim
+19 info trying registry request attempt 1 at 20:54:36
+20 http GET https://registry.npmjs.org/macvim
+21 http 404 https://registry.npmjs.org/macvim
+22 silly registry.get cb [ 404,
+22 silly registry.get   { date: 'Sat, 22 Feb 2014 02:54:37 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     'cache-control': 'max-age=0',
+22 silly registry.get     'content-length': '52',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-v37-ASH, cache-d98-DAL',
+22 silly registry.get     'x-cache': 'MISS, MISS',
+22 silly registry.get     'x-cache-hits': '0, 0',
+22 silly registry.get     'x-timer': 'S1393037676.948259115,VS0,VS27,VE45,VE52',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly lockFile ce82e610-macvim macvim@
+24 silly lockFile ce82e610-macvim macvim@
+25 error 404 'macvim' is not in the npm registry.
+25 error 404 You should bug the author to publish it
+25 error 404
+25 error 404 Note that you can also install from a
+25 error 404 tarball, folder, or http url, or git url.
+26 error System Darwin 13.0.0
+27 error command "node" "/usr/local/bin/npm" "install" "-g" "macvim"
+28 error cwd /Applications/MAMP/htdocs/amberdroid
+29 error node -v v0.10.22
+30 error npm -v 1.3.14
+31 error code E404
+32 verbose exit [ 1, true ]
