@@ -10,3 +10,10 @@
     width:100%;
     height:auto;
 }
+.texleft{
+text-align:justify;
+}
+#map{
+    width:100% !important;
+    height:300px !important;
+}
