@@ -21,8 +21,6 @@
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/js \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/themes \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/css/index.css \
-/Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/css/Roboto-Bold.ttf \
-/Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/css/Roboto-Light.ttf \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/img/logo.png \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/js/index.js \
 /Applications/MAMP/htdocs/amberdroid/amberMx/platforms/android/assets/www/themes/amberish.css \
